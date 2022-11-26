@@ -16,7 +16,7 @@ void TestEmbed::testslot()
 void TestEmbed::setQmlInt(int value)
 {
     cppInt = value;        // Replace the value from qml with previous cppInt
-    //emit qmlIntChanged();  //Inform qml that cppInt has changed  --- apparently useless
+    emit qmlIntChanged();  //Inform qml that cppInt has changed  --- apparently useless
 }
 
 int TestEmbed::qmlInt()
@@ -26,7 +26,7 @@ int TestEmbed::qmlInt()
 void TestEmbed::setQmlInt2(int value)
 {
     msd = value;        // Replace the value from qml with previous cppInt
-    //emit qmlIntChanged2();  //Inform qml that cppInt has changed  --- apparently useless
+    emit qmlIntChanged2();  //Inform qml that cppInt has changed  --- apparently useless
 }
 
 int TestEmbed::qmlInt2()
